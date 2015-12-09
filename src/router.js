@@ -1,10 +1,16 @@
+import Run from '.models/run';
+
 var Router = Backbone.Router.extend({
   routes: {
     '': 'indexAllRuns',
     new: 'newRun',
     ':id': 'detailsPage',
+    ':id/edit': 'detailsEdit',
   },
-  to get a pull request going!
+
+  newRun() {
+    var run = new Run();
+  },
 
 });
 
